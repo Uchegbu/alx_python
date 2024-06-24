@@ -10,7 +10,7 @@ def print_arguments():
     else:
         result = "{} arguments:".format(num_args)  + "\n"
         for i in range(num_args):
-            result  += "{}: {}".format(i + 1, argv[i + 1]) + " " + "\n"
+            result  += "{}:{}".format(i + 1, argv[i + 1]) + " " + "\n"
         return result    
 
 if __name__ == "__main__":
