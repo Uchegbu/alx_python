@@ -9,5 +9,5 @@ def validate_password(password):
         return True 
     
     else:
-        return False 
-    
+        return False
+       
