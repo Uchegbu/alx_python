@@ -7,7 +7,6 @@ def safe_print_division(a, b):
         print("inside result: {}.0".format(result))
         if result is not None:
             print("{} / {} = {}.0".format(a, b, result))
-    return result
 
 
 if __name__ == "__main__":
