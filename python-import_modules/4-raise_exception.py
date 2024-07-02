@@ -2,7 +2,7 @@ def raise_exception():
     try:
         "heelo" + 5
     except TypeError:
-        print("exception raised")
+        print("exception has been raised")
 
 
 if __name__ == "__main__":
