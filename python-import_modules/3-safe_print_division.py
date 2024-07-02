@@ -5,9 +5,10 @@ def safe_print_division(a, b):
         result = None
     finally:
         print("Inside result: {}".format(result))
-        print("{:d} / {:d} = {}".format(a, b, result))
+        if result is not None:
+            print("{:d} / {:d} = {}".format(a, b, result))
         return result
 
 
 if __name__ == "__main__":
-    safe_print_division(10,0)
+    safe_print_division(10,6)
