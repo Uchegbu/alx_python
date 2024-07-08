@@ -6,12 +6,12 @@ def print_matrix_integer(matrix=[[]]):
         result += "\n"
     return result
 
-
-if __name__ == "__main__":
-    matrix = [
+matrix = [
 	[1, 2, 3],
 	[4, 5, 6],
 	[7, 8, 9]
 ]
-    
-print(print_matrix_integer(matrix))
+
+
+if __name__ == "__main__":
+    print(print_matrix_integer(matrix))
