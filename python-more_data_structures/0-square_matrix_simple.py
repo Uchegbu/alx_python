@@ -1,6 +1,6 @@
 def square_matrix_simple(matrix=[]):
     if not matrix or not matrix[0]:
-        return[]
+        return[[]]
     squared_matrix = []
     for row in matrix:
         squared_row = []
