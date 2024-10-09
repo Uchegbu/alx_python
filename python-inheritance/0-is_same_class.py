@@ -16,13 +16,14 @@ class a_class(Animal):
     def __init__(self): # no parameter is passed,it is empty.
         pass
 
-#creating an instance of the class a_class
-obj = a_class()
-
 """
 a function that return true if an object is exactly the same of a class and false otherwise.
 """
 def is_same_class(obj, a_class):
     return type(obj) == a_class
-    
+
+if __name__ == "__main__":
+#creating an instance of the class a_class
+   obj = a_class()
+
 print(is_same_class(obj, a_class))

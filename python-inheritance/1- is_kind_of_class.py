@@ -24,14 +24,15 @@ class Cat(a_class):
     def __init__(self): #no parameter is passed
         pass
 
-#creating an instance of Dog
-obj = a_class()
-my_cat = Cat()
-
 """
 creating a funcion that return true when is an instance or inheriting from the specifird class
 """
 def is_kind_of_class(obj,a_class):
     return isinstance(obj,a_class)
 
-print(is_kind_of_class(my_cat,a_class))
+if __name__ == "__main__":
+#creating an instance of Dog
+  obj = a_class()
+  my_cat = Cat()
+
+print(is_kind_of_class(obj,a_class))
