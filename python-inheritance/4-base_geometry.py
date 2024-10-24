@@ -4,8 +4,8 @@ area() is not implemented. the try-except block will be use to catch the error w
 """
 
 class BaseGeometry:
-    #in this class ther is no attribute but bthere ispublic instance method.
-    def __init__(self,): #no parameters.
+    #in this class there is no attribute but there is public instance method.
+    def __init__(self): #no parameters.
         pass
 
     def area(self): #when this function is called,it raises an error message instead of calculating area.
