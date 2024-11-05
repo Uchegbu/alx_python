@@ -27,9 +27,6 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
-if __name__ == "__main__": 
-#creating an instance of the class  
-    obj = BaseGeometry()
 #creatint try-except block for area and integer validator
 def area(obj):
     try:
@@ -44,8 +41,10 @@ def integer_validator(obj):
         return(e)
     except ValueError as e:
         return(e)
-
-result1 = area(obj)
-result2 = integer_validator(obj)
-print(result1)
-print(result2)
+if __name__ == "__main__": 
+#creating an instance of the class  
+    obj = BaseGeometry()
+    result1 = area(obj)
+    result2 = integer_validator(obj)
+    print(result1)
+    print(result2)
