@@ -27,7 +27,8 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
-#creatint try-except block for area and integer validator
+        
+#creating try-except block for area and integer validator
 def area(obj):
     try:
         return(obj.area())
