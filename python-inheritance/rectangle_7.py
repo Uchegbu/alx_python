@@ -24,7 +24,7 @@ class Rectangle(BaseGeometry):
     
 if __name__ == "__main__":  
     try: 
-        obj = Rectangle(7,7)
+        obj = Rectangle(7,0)
         print(obj)
         print(obj.area())
     except ValueError as e:
