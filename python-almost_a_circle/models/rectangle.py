@@ -2,7 +2,19 @@
 this script inherits from Base class.in this script, we will have private instance attribute with its own respective getters and setters.
 note, that Base class will be imported.
 """
-from base import Base
+class Base:
+    """
+     Base class for all objects.
+    This class provides a basic implementation of an object with an ID.
+    """
+    __nb_objects = 0  #private class attribute
+    #creating a class constructor
+    def __init__(self, id=None): #id is the Attribute.
+        if id is not None:
+            self.id = id
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
 
 class Rectangle(Base):
     """
