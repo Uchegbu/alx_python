@@ -1,4 +1,5 @@
 from base import Base
+
 class Rectangle(Base):
     """
     contains four private instance attributes with its own public getters and setters
