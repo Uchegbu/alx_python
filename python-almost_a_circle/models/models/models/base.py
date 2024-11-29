@@ -9,7 +9,7 @@ class Base:
     """
     __nb_objects = 0  #private class attribute
     #creating a class constructor
-    def __init__(self, id=None): #id is the Attribute.
+    def __init__ (self, id=None): #id is the Attribute.
         if id is not None:
             self.id = id
         else:
@@ -17,5 +17,5 @@ class Base:
             self.id = Base.__nb_objects
 
 if __name__ == "__main__":
-    obj = Base(0)
+    obj = Base()
     print(obj.id)
