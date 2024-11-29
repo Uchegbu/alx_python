@@ -21,34 +21,34 @@ class Rectangle(Base):
 
     #creating getter and setter for width
     @property
-    def public_width(self):
+    def width(self):
         return self.__width
-    @public_width.setter
-    def public_width(self, value):
+    @width.setter
+    def width(self, value):
         self.__width = value
     
     #creating getter and setter for height
     @property
-    def public_height(self):
+    def height(self):
         return self.__height
-    @public_height.setter
-    def public_height(self, value):
+    @height.setter
+    def height(self, value):
         self.__height = value
 
     #creating getter and setter for x
     @property
-    def public_x(self):
+    def x(self):
         return self.__x
-    @public_x.setter
-    def public_x(self, value):
+    @x.setter
+    def x(self, value):
         self.__x = value
 
     #creating getter and setter for y
     @property
-    def public_y(self):
+    def y(self):
         return self.__y
-    @public_y.setter
-    def public_y(self, value):
+    @y.setter
+    def y(self, value):
         self.__y = value
 
 if __name__ == "__main__":
