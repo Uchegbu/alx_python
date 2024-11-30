@@ -19,9 +19,9 @@ class Rectangle(Base):
             self.x = x
             self.y = y
         except TypeError as e:
-            raise TypeError(f"Invalid rectangle attributes: {e}")
+            raise TypeError(e)
         except ValueError as e:
-            raise ValueError(f"Invalid rectangle attributes: {e}")
+            raise ValueError(e)
 
         
 
