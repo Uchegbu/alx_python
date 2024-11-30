@@ -81,10 +81,18 @@ class Rectangle(Base):
         area of rectangle is width * height
         """
         return self.width * self.height
+    
+    def display(self):
 
+        result = ""
+        for rectangle in range(self.height):
+            result += "#" * self.width + "\n"
+        return result
+    
 if __name__ == "__main__":
     try:
-        obj = Rectangle(2, 7)
+        obj = Rectangle(8, 7)
         print(obj.area())
+        print(obj.display())
     except (TypeError, ValueError) as e:
         print(e)
