@@ -54,8 +54,11 @@ class Rectangle(Base):
     def x(self):
         return self.__x
     @x.setter
-    def x(self, value):
-        if value < 0: #validation of x
+    def x(self, value):#validation of x
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
+
+        elif value < 0: 
             raise ValueError("x must be >= 0")
         self.__x = value
 
@@ -65,6 +68,9 @@ class Rectangle(Base):
         return self.__y
     @y.setter
     def y(self, value): #validation of y
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
+
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
