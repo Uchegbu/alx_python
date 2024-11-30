@@ -5,7 +5,7 @@ This module contains the Rectangle class, which represents a rectangle
 with attributes for width, height, x, and y.
 """
 
-from models.base import Base
+from base import Base
 
 class Rectangle(Base):
     """
@@ -90,13 +90,13 @@ class Rectangle(Base):
         """
 
         result = ""
-        for rectangle in range(self.height):
+        for i in range(self.height):
             result += "#" * self.width + "\n"
         return result
     
 if __name__ == "__main__":
     try:
-        obj = Rectangle(8, 7)
+        obj = Rectangle(4,9)
         print(obj.area())
         print(obj.display())
     except (TypeError, ValueError) as e:
