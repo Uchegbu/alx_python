@@ -83,6 +83,11 @@ class Rectangle(Base):
         return self.width * self.height
     
     def display(self):
+        """
+        this method display the instance of a class  as #.
+        loop will iterate over self.height as the column and self.width as the row
+        since i'm using retutn statement, i will be using a variable result.
+        """
 
         result = ""
         for rectangle in range(self.height):
