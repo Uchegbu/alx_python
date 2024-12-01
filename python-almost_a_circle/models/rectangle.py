@@ -5,7 +5,7 @@ This module contains the Rectangle class, which represents a rectangle
 with attributes for width, height, x, and y.
 """
 
-from base import Base
+from models.base import Base
 
 class Rectangle(Base):
     """
