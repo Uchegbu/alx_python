@@ -96,8 +96,8 @@ class Rectangle(Base):
     
 if __name__ == "__main__":
     try:
-        obj = Rectangle(4,9)
-        print(obj.area())
+        obj = Rectangle(1, 1)
+        #print(obj.area())
         print(obj.display())
     except (TypeError, ValueError) as e:
         print(e)
